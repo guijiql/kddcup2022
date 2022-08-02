@@ -1,0 +1,15 @@
+{
+    "epochs": 6,
+    "optimizer": "AdamW",
+    "learning_rate": 1e-6,
+    "weight_decay": 0,
+    "early_stop": 10,
+    "eval_steps": 2000,
+    "sample_strategy": {
+        "sampler": "record_based",
+        "max_len": -1,
+        "train_batch_size": 16,
+        "eval_batch_size": 64
+    },
+    "bertmodel": "microsoft/mdeberta-v3-base"
+}

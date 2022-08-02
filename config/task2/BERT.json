@@ -1,0 +1,11 @@
+{
+    "epochs": 4,
+    "train_batch_size": 64,
+    "eval_batch_size": 64,
+    "eval_steps": 1000,
+    "optimizer": "AdamW",
+    "learning_rate": 2e-5,
+    "weight_decay": 0.01,
+    "early_stop": 10,
+    "bertmodel": "bert-base-uncased"
+}

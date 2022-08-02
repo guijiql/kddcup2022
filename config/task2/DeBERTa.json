@@ -1,0 +1,23 @@
+{
+    "epochs": 5,
+    "optimizer": "AdamW",
+    "learning_rate": 5e-6,
+    "weight_decay": 0,
+    "early_stop": 10,
+    "eval_steps": 30000,
+    "add_unknown": false,
+    "sample_strategy": {
+        "sampler": "record_based",
+        "max_len": -1,
+        "train_batch_size":16,
+        "eval_batch_size": 64
+    },
+    "bertmodel": "microsoft/deberta-v3-base",
+    "apex": true,
+    "awp_lr": 5e-5,
+    "awp_eps": 1e-2,
+    "n_gradient_accumulation_steps": 1,
+    "start_epoch": 3,
+    "continue_training": 0,
+    "add_task1_data": 1
+}
